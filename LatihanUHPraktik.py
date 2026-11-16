@@ -35,6 +35,9 @@ while True:
 
     print('=' * 50)
 
+    nama_pelanggan = input("\n> Nama pelanggan: ")
+    print(f"\n~ Selamat berbelanja, {nama_pelanggan}!")
+
     while True:
         
         choice = input("\n> Pilihan Barang (Kode): ")
@@ -89,6 +92,7 @@ while True:
     print(f"{"MIKELMART":^65}")
     print(f"{"BILL PEMBAYARAN PELANGGAN":^65}")
     print('=' * 69)
+    print(f"{"Nama Pelanggan":<30}: {nama_pelanggan}")
     print(f"{"Waktu Pembelanjaan":<30}: {time_purchase}\n")
 
     print(f"{'Kode':^7}|{'Nama Barang':^23}|{'Harga':^10}|{'Qty':^6}|{'Subtotal':^12}")
@@ -128,8 +132,7 @@ while True:
     buy_again = input("\nApakah ingin melakukan transaksi lagi? (Y/N): ").upper()
 
     if buy_again == "N":
-        print("\nProgram kasir selesai.")
-        print("Terima kasih!\n")
+        print("\n~ Program toko selesai, terima kasih!\n")
         print("~ Nama : Mikail Aidan Siregar")
         print("~ Kelas: X-G")
         break
